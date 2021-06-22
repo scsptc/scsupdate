@@ -33,7 +33,7 @@ sudo cp scsupdate /usr/local/bin/
 
 ## Function
 
-** The modem must be powered up and connected with the PC either via USB or a serial port! **
+**The modem must be powered up and connected with the PC either via USB or a serial port!**
 
 Start with
 ```
@@ -54,7 +54,7 @@ Enter a number:
 ```
 Enter a number from the list and press enter.
 
-** The firmware must match the modem! **
+**The firmware must of course match the modem!**
 
 If you don't want the automatic search, you can enter the device and baudrate as arguments:
 ```
