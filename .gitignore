@@ -33,6 +33,10 @@ update
 *.x86_64
 *.hex
 
+# Firmware files
+*.dr7
+*.p??
+
 # Debug files
 *.dSYM/
 *.su
