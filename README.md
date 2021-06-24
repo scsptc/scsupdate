@@ -35,7 +35,7 @@ sudo cp scsupdate /usr/local/bin/
 
 **The modem must be powered up and connected with the PC either via USB or a serial port!**
 
-Start with
+For USB based SCS modems start with
 ```
 ./scsupdate <firmware_file>
 ```
@@ -45,7 +45,7 @@ e.g. for updating a P4dragon DR-7800 or DR-7400
 ```
 
 scsupdate searches for SCS modems (max. 8) on USB.
-If more than on modem is found SCS Update presents you a list of the modems.
+If more than on modem is found scsupdate presents you a list of the modems.
 ```
 More than one SCS modem found! Plaese choose:
 1: /dev/ttyUSB0     P4dragon DR-7400
@@ -58,7 +58,7 @@ Enter a number from the list and press enter.
 
 If you don't want the automatic search, you can enter the device and baudrate as arguments:
 ```
-./scsupdate /dev/ttyS0 38400 <firmware_file>
+./scsupdate <device> <baudrate> <firmware_file>
 ```
 e.g. a PTC-IIpro connected to ttyS0
 ```
@@ -67,14 +67,7 @@ e.g. a PTC-IIpro connected to ttyS0
 
 **Hint:** if you get a *permission denied* error, you normally have to add the user to the group dialout!
 ```
-sudo usermod -a -G dialout username
+sudo adduser $USER dialout
 ```
-replace *username* with your user name.
 
-**Log out and log in again to activate the changes!**
-
-
-Tested on:
-- Debian 10
-- Ubuntu 20.04
-- Raspberry Pi OS Lite May 7th 2021
+**You must log out and back in before these group changes come into effect!**
