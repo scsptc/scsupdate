@@ -25,7 +25,7 @@
 *.dylib
 
 # Executables
-update
+scsupdate
 *.exe
 *.out
 *.app
